@@ -1,11 +1,15 @@
-const plugin = require('tailwindcss/plugin')
+// const plugin = require('tailwindcss/plugin')
 
 const config = {
 	mode: 'jit',
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				'sanae-green': "#eeffd3"
+			}
+		}
 	},
 
 	plugins: []
