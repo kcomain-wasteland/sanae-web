@@ -36,7 +36,7 @@ export let balls = `${error.name}: ${error.message}<br><pre>${error.stack}</pre>
     {/if}
     <br>
     <p class="py-3">
-        <a href="/" class="rounded p-3 bg-opacity-25 border border-transparent bg-gray-300 hover:bg-opacity-75 hover:border-gray-700">Return to home</a>
-        <a href="/#" class="rounded p-3 bg-opacity-25 border border-transparent bg-gray-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-pink-400">Reload Page</a>
+        <a href="/" class="rounded p-3 bg-opacity-25 border border-transparent bg-pink-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-gray-600">Return to home</a>
+        <a href="#/" onclick="window.location.reload()" class="rounded p-3 bg-opacity-25 border border-transparent bg-green-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-gray-600">Reload Page</a>
     </p>
 </div>
