@@ -22,6 +22,6 @@
                 bg-blue-300 text-black hover:border-blue-500
                 dark:bg-blue-800 dark:text-white dark:hover:border-blue-400"
 	>
-		Switch to {dorkMode ? 'dork' : 'flashbang'} mode
+		Switch to {dorkMode ? 'flashbang' : 'dork'} mode
 	</button>
 </div>
