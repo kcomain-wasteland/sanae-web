@@ -10,6 +10,9 @@ const config = {
 			colors: {
 				'sanae-green': "#eeffd3",
 				'sanae-dark-green': "#2f4c39"
+			},
+			backgroundImage: {
+				'cirno-fumo': "url('/cirno.png')"
 			}
 		}
 	},

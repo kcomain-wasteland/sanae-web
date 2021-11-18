@@ -21,7 +21,7 @@
 
     <br class="my-2">    
     <p class="align-middle">
-        This site is create by <a href="//soopy.moe">Sophie</a>,
+        This site is created by <a href="//soopy.moe">Sophie</a>,
         powered by <a href="//kit.svelte.dev">SvelteKit</a> and <a href="//tailwindcss.com">TailwindCSS</a>
     </p>
 </div>
