@@ -11,6 +11,7 @@
 
 <script>
 	import '../app.css';
+	import DarkModeToggle from '$lib/darkModeToggle.svelte';
 </script>
 
 <link rel="stylesheet" href="https://cdn.pride.codes/css/bar_helpers.css">
@@ -42,6 +43,7 @@
 				<a href="/login" class="py-1 px-3 rounded border border-transparent
 									  text-black bg-blue-300 hover:bg-opacity-20 hover:text-black hover:border-blue-600
 									  dark:text-white dark:bg-blue-500 dark:hover:text-white dark:hover:border-blue-200">Login</a>
+				<DarkModeToggle />
 			</div>
 
 		</div>
