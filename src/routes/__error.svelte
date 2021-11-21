@@ -31,12 +31,15 @@ export let balls = `${error.name}: ${error.message}<br><pre>${error.stack}</pre>
     {#if status === 404}
     <p class="mx-auto">Page not found.</p>
     {:else}
-    <p class="mx-auto">An unknown error occured! Please try again in a while.</p>
-    <div class="text-gray-400 dark:text-gray-600 overflow-auto w-3/4">Error: {@html balls}</div>
+    <p class="mx-2 text-center">A wild <span class="text-red-400 hover:text-green-200">MISSINGNO</span> appeared! <br/> Please try again later.</p>
+    <div class="text-gray-400 dark:text-gray-600 overflow-auto w-3/4 text-xs md:text-base">Error: {@html balls}</div>
     {/if}
     <br>
-    <p class="py-3">
+    <p class="py-3 text-xs md:text-lg">
         <a href="/" class="rounded p-3 bg-opacity-25 border border-transparent bg-pink-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-gray-600">Return to home</a>
         <a href="#/" onclick="window.location.reload()" class="rounded p-3 bg-opacity-25 border border-transparent bg-green-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-gray-600">Reload Page</a>
+        {#if status >= 500}
+        <a href="mailto:sanae@soopy.moe" class="rounded p-3 bg-opacity-25 border border-transparent bg-blue-300 hover:bg-opacity-75 hover:border-gray-700 hover:text-gray-600">Spam dev email</a>
+        {/if}
     </p>
 </div>

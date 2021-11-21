@@ -5,15 +5,20 @@
 
 @layer base {
     h1, h2, h3, h4 {
-        @apply transition-colors text-green-400 dark:text-green-600;
+        @apply transition-colors text-green-500 dark:text-green-300;
     }
 
     a {
-        @apply transition-colors text-blue-500 dark:text-blue-300 hover:text-green-500;
+        @apply transition-colors text-blue-500 dark:text-blue-300 hover:text-green-500 dark:hover:text-white hover:underline;
     }
 
     body {
         @apply bg-sanae-green dark:bg-sanae-dark-green transition-colors;
+        @apply dark:text-white;
+    }
+
+    * {
+        @apply transition-colors;
     }
 
 }

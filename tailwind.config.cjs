@@ -9,7 +9,7 @@ const config = {
 		extend: {
 			colors: {
 				'sanae-green': "#eeffd3",
-				'sanae-dark-green': "#2f4c39"
+				'sanae-dark-green': "#4a4e43"
 			},
 			backgroundImage: {
 				'cirno-fumo': "url('/cirno.png')"

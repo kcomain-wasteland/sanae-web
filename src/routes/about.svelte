@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="flex flex-col m-5 max-w-full">
-    <h1 class="text-5xl">About</h1>
+    <h1 class="text-4xl md:text-5xl">About</h1>
     <br class="my-2">
 
     <h3 class="text-2xl">Acknowledgements</h3>
