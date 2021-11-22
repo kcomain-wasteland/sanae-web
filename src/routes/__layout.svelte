@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="https://cdn.pride.codes/css/bar_helpers.css">
 
-<nav class="bg-green-200 transition duration-300 dark:bg-green-700 shadow-lg top-0 z-auto sticky">
+<nav class="bg-green-200 transition  dark:bg-green-700 shadow-lg top-0 z-auto sticky">
     <div class="pride-strip"></div>
     <div class="max-w-6xl mx-auto px-2">
         <div class="flex justify-between">
@@ -35,15 +35,15 @@
 
                 <!--Navbar contents-->
                 <div class="hidden sm:flex items-center space-x-1">
-                    <a href="/" class="
+                    <a href="/" data-page-name="Home" class="
                                        nav-item py-1 px-2 rounded border border-transparent hover:no-underline dark:hover:no-underline
                                        text-black hover:bg-opacity-30 hover:bg-yellow-300 hover:text-black hover:border-yellow-500 active:border-sanae-dark-green
                                        dark:text-white dark:hover:bg-opacity-40 dark:hover:bg-gray-300 dark:hover:border-gray-500 dark:active:border-sanae-green">Home</a>
-                    <a href="/app/packages" class="
+                    <a href="/app/packages" data-page-name="Package Listing" class="
                                        nav-item py-1 px-2 rounded border border-transparent hover:no-underline dark:hover:no-underline
                                        text-black hover:bg-opacity-40 hover:bg-pink-300 hover:text-black hover:border-pink-400 active:border-sanae-dark-green
                                        dark:text-white dark:hover:bg-opacity-60 dark:hover:bg-pink-600 dark:over:text-white dark:hover:border-pink-400 dark:active:border-sanae-green">Package Listing</a>
-                    <a href="/about" class="
+                    <a href="/about"  data-page-name="About" class="
                                        nav-item py-1 px-2 rounded border border-transparent hover:no-underline dark:hover:no-underline
                                        text-black hover:bg-opacity-40 hover:bg-blue-300 hover:text-black hover:border-blue-400 active:border-sanae-dark-green
                                        dark:text-white dark:hover:bg-opacity-60 dark:hover:bg-blue-700 dark:over:text-white dark:hover:border-blue-400 dark:active:border-sanae-green">About</a>
