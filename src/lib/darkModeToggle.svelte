@@ -25,7 +25,7 @@
 
 <button
 	on:click={toggleDorkMode}
-	class="flex-grow-0 flex-row rounded border-2 border-transparent transition-colors p-2
+	class="hidden sm:inline flex-grow-0 flex-row rounded border-2 border-transparent transition-colors p-2
                 bg-blue-300 text-black hover:border-blue-500
                 dark:bg-blue-700 dark:text-white dark:hover:border-blue-400">
 	{#key dorkMode}
