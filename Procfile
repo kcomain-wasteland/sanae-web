@@ -1,2 +1,2 @@
 # heroku.
-web node build
+web: node build
