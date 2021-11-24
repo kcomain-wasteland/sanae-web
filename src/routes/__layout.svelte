@@ -14,7 +14,8 @@
     import DarkModeToggle from '$lib/darkModeToggle.svelte';
     import Fa from 'svelte-fa/src/fa.svelte';
     import { faBars } from '@fortawesome/free-solid-svg-icons';
-import UserStateButton from '$lib/userStateButton.svelte';
+    import UserStateButton from '$lib/userStateButton.svelte';
+    import {fly} from 'svelte/transition';
 
     export let currentPage;
     export let showMobileMenu = false;
@@ -60,15 +61,21 @@ import UserStateButton from '$lib/userStateButton.svelte';
                 <UserStateButton currentPage/>
                 <DarkModeToggle />
                 <div class="md:hidden flex items-center ml-5">
-                    <button class="outline-none menu-button w-6 h-6"><Fa icon={faBars}/></button>
+                    <button class="outline-none menu-button w-6 h-6" on:click={() => {showMobileMenu = !showMobileMenu}}><Fa icon={faBars}/></button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="hidden menu">
-
+    {#if showMobileMenu}
+    <div class="menu flex flex-col p-5 gap-5" transition:fly="{{y:-20, duration: 250}}">
+        <a href="/">Home</a>
+        <a href="/app/packages">Package Listing</a>
+        <a href="/about">About</a>
+        <hr class="border-gray-700 dark:border-gray-400"/>
+        <DarkModeToggle auto=no />
     </div>
+    {/if}
 </nav>
 
 <slot></slot>

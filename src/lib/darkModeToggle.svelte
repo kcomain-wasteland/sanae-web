@@ -21,11 +21,12 @@
 	})
 
 	export let dorkMode = getDorkMode;
+	export let auto
 </script>
 
 <button
 	on:click={toggleDorkMode}
-	class="hidden sm:inline flex-grow-0 flex-row rounded border-2 border-transparent transition-colors p-2
+	class="{auto === 'no' ? "inline" : "hidden sm:inline"} flex-grow-0 flex-row rounded border-2 border-transparent transition-colors p-2 text-center
                 bg-blue-300 text-black hover:border-blue-500
                 dark:bg-blue-700 dark:text-white dark:hover:border-blue-400">
 	{#key dorkMode}

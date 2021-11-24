@@ -21,7 +21,6 @@
         @apply transition-colors; /*duration-300;*/
         @apply motion-reduce:transition-none motion-reduce:transform-none;
     }
-
 }
 
 html {
